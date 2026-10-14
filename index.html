@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090910">
+  <title>NEXUS OS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="desktop">
+    <header>
+      <span class="logo">◈ NEXUS OS</span>
+      <span id="clock">00:00:00</span>
+    </header>
+
+    <section class="welcome">
+      <p class="label">WEB DESKTOP ENVIRONMENT</p>
+      <h1>Welcome to <span>NEXUS.</span></h1>
+      <p>Your workspace. Your rules.</p>
+
+      <div class="apps">
+        <button onclick="openApp('terminal')">
+          <span>⌘</span>
+          Terminal
+        </button>
+
+        <button onclick="openApp('files')">
+          <span>▤</span>
+          File Manager
+        </button>
+
+        <button onclick="openApp('about')">
+          <span>◈</span>
+          About
+        </button>
+      </div>
+    </section>
+
+    <section id="window" class="window hidden">
+      <div class="window-header">
+        <span id="window-title">Application</span>
+        <button onclick="closeApp()">✕</button>
+      </div>
+      <div id="window-content"></div>
+    </section>
+
+    <footer>
+      <button onclick="openApp('about')">◈</button>
+      <span>NEXUS OS <small>WEB EDITION</small></span>
+      <span id="status">SYSTEM READY</span>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
